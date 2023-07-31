@@ -6,6 +6,7 @@
 
 :root {
 	--main-color: #811141;
+	--text-color: #202020;
 }
 
 body {
@@ -19,4 +20,20 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
+	text-decoration: none;
+	border: none;
+}
+.btn {
+	background: #811141;
+	color: white;
+	padding: 16px 32px;
+	border-radius: 8px;
+	flex: row;
+	gap: 8px;
+	outline: none;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+
+
 }
