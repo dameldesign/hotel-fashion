@@ -24,7 +24,7 @@ export default function Banner() {
             <a href="/" className="-m-1.5 p-1.5 no-underline">
               <span className="sr-only">Your Company</span>
               <img
-                className="h-16 w-[184px]"
+                className="h-6 w-auto"
                 src={logo}
                 alt=""
               />

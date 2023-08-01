@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className=" p-0">
       {/* Footer Content */}
-      <div className="bg-[#FFFDFE] pt-16 pb-16 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-60 items-center flex ">
+      <div className="bg-[#FFFDFE] pt-16 pb-16 px-4 sm:px-8 md:px-12 lg:px-20 xl:pr-60 items-center flex ">
         {/* Footer Columns */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 px-10">
           {/* Column 1 */}
@@ -48,7 +48,7 @@ const Footer = () => {
               Get updates about available spaces, weekly digest of our most important activities and more in your email
             </h1>
             <div className="flex flex-col text-start text-base font-normal text-[--text-color] gap-2">
-              <div className="gap-2 flex-col sm:flex-row flex mb-2 sm:w-[400px]">
+              <div className="gap-2 flex-col lg:flex-row flex mb-2 lg:w-[400px]">
                 <input
                   type="email"
                   placeholder="Enter Your Email Address"
