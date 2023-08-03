@@ -1,5 +1,5 @@
 import React from "react";
-import five from "../assets/five.png";
+import img from "../assets/five.png";
 
 const Space = () => {
   return (
@@ -12,18 +12,18 @@ const Space = () => {
       </p>
 
       {/* Grid of each individual item */}
-      <div className=" w-full max-w-5xl p-5 pb-10 mx-auto  gap-5 colum lg:columns-3 xl:columns-4 md:columns-2">
-        <div className="rounded-2xl  flex-col border-solid mb-10 border-[#D8D8D8] py-4 px-3.5 w-full h-auto flex justify-between items-center gap-2">
-          <div>
-            <img
-              src={five}
-              className=" block w-full h-auto rounded-t-2xl"
-              alt=""
-            />
+      <div className=" w-full h-auto max-w-fit  p-5 pb-10 mx-auto gap-x-5  gap-y-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  place-items-center">
+        <div className="rounded-2xl  flex-col border-solid -mb-6 border-[#D8D8D8] py-4 px-3.5 w-[316px] h-auto flex justify-between items-start gap-5 shadow-sm">
+          <div className="rounded-t-lg w-[288px] h-[216px] flex   mx-auto justify-center "
+           style={{ backgroundImage: `url(${img})`, backgroundSize: "cover" }}
+          >
+
+            <div className=" flex justify-between  flex-col w-[93%] h-[68%] gap-5 pt-6">
+
             <svg
               width="32"
               height="32"
-              className="  items-end absolute left-[10.2rem] right-0 -bottom-[22.75rem]  flex justify-end  w-[70%]"
+              className="  items-end   flex justify-end w-[190%] "
               viewBox="0 0 32 32"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -39,9 +39,9 @@ const Space = () => {
               />
             </svg>
 
-            <div className=" flex flex-row items-center   absolute left-[60px] -bottom-[27rem] right-0 justify-between w-[70%] px-4">
+            <div className=" flex flex-row items-center  justify-between">
               {/* left arrow */}
-              <div className="flex items-center justify-center rounded-full bg-slate-400 w-[32px] h-[32px] ">
+              <div className="flex items-center justify-center rounded-full bg-white w-[32px] h-[32px] ">
                 <svg
                   width="11"
                   height="16"
@@ -57,7 +57,7 @@ const Space = () => {
               </div>
 
               {/* right arrow */}
-              <div className="flex items-center justify-center rounded-full bg-slate-400 w-[32px] h-[32px] ">
+              <div className="flex items-center justify-center rounded-full bg-white w-[32px] h-[32px] ">
                 <svg
                   width="12"
                   height="24"
@@ -72,14 +72,18 @@ const Space = () => {
                 </svg>
               </div>
             </div>
+            </div>
+
           </div>
 
           {/* content */}
 
-          <div className=" flex flex-col items-start justify-start text-start  text-[--text-color]">
-            <h3>Hotel Star</h3>
+          <div className=" flex flex-col items-start justify-start text-start  h-auto w-full gap-3 text-[--text-color]">
+            
+            <h3 className=" font-medium text-[18px] text-[text-color]">Hotel Star</h3>
             <div className=" flex flex-row w-[100%] items-center justify-between">
-              <svg
+            <div className=" flex flex-row gap-3">
+            <svg
                 width="16"
                 height="20"
                 viewBox="0 0 16 20"
@@ -93,6 +97,9 @@ const Space = () => {
               </svg>
 
               <p>Sunderland</p>
+
+              </div>
+
               <div className=" flex flex-row gap-3">
                 <svg
                   width="20"
@@ -110,34 +117,14 @@ const Space = () => {
                 <p className="">4.0</p>
               </div>
             </div>
-            <p>Space available</p>
-            <p>From £90.00/day</p>
+            <em className=" font-normal text-base text-[--main-color]"  >Space available</em>
+            
+            <p>From <span className=" font-semibold">£90.00</span>/day</p>
           </div>
         </div>
-        <div className="rounded-2xl border-solid mb-10 border-[#D8D8D8]">
-          Lorem, ipsum.
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div className="rounded-2xl border-solid mb-10 border-[#D8D8D8]">
-          Lorem, ipsum.
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div className="rounded-2xl border-solid mb-10 border-[#D8D8D8]">
-          Lorem, ipsum.
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div className="rounded-2xl border-solid mb-10 border-[#D8D8D8]">
-          Lorem, ipsum.
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div className="rounded-2xl border-solid mb-10 border-[#D8D8D8]">
-          Lorem, ipsum.
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div className="rounded-2xl border-solid mb-10 border-[#D8D8D8]">
-          Lorem, ipsum.
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
+
+
+
       </div>
 
       <div className=" lg:items-end lg:justify-end lg:flex lg:w-full">

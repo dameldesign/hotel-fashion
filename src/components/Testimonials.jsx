@@ -29,7 +29,7 @@ const Testimonials = () => {
           What Our Clients Are Saying About Us
         </h1>
         <div className="container  px-4 md:px-8 lg:px-16 xl:gap-8 flex items-center justify-center">
-          <div className="grid  place-content-center grid-cols-1 md:grid-cols-2 md:gap-y-6 xl:grid-cols-3 xl:gap-y-20  gap-16 ">
+          <div className="grid   place-items-center grid-cols-1 md:grid-cols-2 md:gap-y-6 xl:grid-cols-3 xl:gap-y-20  gap-16 ">
             {navigation.map((item, index) => (
               <div key={index} className="bg-white w-[340px] h-auto   xl:w-[400px] xl:h-[253px] p-6 border rounded-lg shadow-md">
                 <div className="flex flex-row items-center justify-between w-full mb-5">
