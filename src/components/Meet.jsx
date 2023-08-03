@@ -3,7 +3,7 @@ import nine from "../assets/nine.png";
 
 const Meet = () => {
   return (
-    <div className=" flex-col  py-8 lg:px-10 items-center mx-auto justify-between w-full h-auto md:flex-row">
+    <div className=" flex-col  py-8 lg:px-10 2xl:px-40 items-center mx-auto justify-between w-full h-auto md:flex-row">
       <h1 className="px-4 text-[--text-color] font-medium text-[32px] leading-[48px] md:mb-6 text-start lg:px-0 ">
         Meet Our Verified Exclusive Brands
       </h1>
