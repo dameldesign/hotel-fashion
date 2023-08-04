@@ -1,5 +1,6 @@
 // import slider images
 import Avatar1 from '../src/assets/eight.png';
+import Icon1 from '../src/assets/fifteen.png';
 import Avatar2 from '../src/assets/seven.png';
 import Avatar3 from '../src/assets/six.png';
 import Avatar4 from '../src/assets/five.png';
@@ -13,10 +14,13 @@ export const slider = [
     message:
     'Space Available',
     image: Avatar1,
-    name: 'Hotel Star',
+    name: 'Collxx',
     price: '£90.00',
     location: 'Brighton',
     point: 5.10,
+    brand:'Collxx',
+    text: 'Name',
+    icon: Icon1,
   },
   {
     message:
@@ -26,6 +30,9 @@ export const slider = [
     price: '£40.00',
     location: 'Brighton',
     point: 4.5,
+    // brand: ,
+    // text: ,
+    // icon: Icon1,
   },
   {
     message:

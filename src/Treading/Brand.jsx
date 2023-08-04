@@ -1,52 +1,36 @@
 import React from 'react';
-import { slider } from "../data";
 
-const Treading = () => {
+import { slider } from '../data';
+
+
+const Brand = () => {
     return (
         <section className=" flex flex-col 2xl:px-40 items-center gap-6 justify-between text-[--text-color] mx-auto py-10 p-6 ">
         <div className=" items-center justify-center w-full flex text-center lg:items-start lg:justify-start lg:flex lg:w-[95%] flex-col gap-6" > 
   
         <h1 className=" text-[--text-color] text-start flex md:items-start font-medium text-[32px] leading-[48px] xl:mb-6  lg:px-0 ">
-        Trending Hotels
+        Trending Brand
         </h1>
         <p className="text-[18px] font-normal">
-        Experience luxury beyond your expectations in the lap of nature
+        Everything looks good with confidence and that confidence is what our brands give, a better you.
         </p>
          </div>
   
         {/* Grid of each individual item */}
         <div className=" w-full h-auto max-w-fit  p-5 pb-10 mx-auto gap-x-5  gap-y-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  place-items-center">
-          {slider.map((value, index) => (
+          {slider.map((item, index) => (
             <div
               className="rounded-2xl  flex-col border-solid mb-4 border-[#D8D8D8] py-4 px-3.5 w-[316px] h-auto flex justify-between items-start gap-5"
               key={index}
             >
               <div
-                className="rounded-t-lg w-[288px] h-[216px] flex   mx-auto justify-center "
+                className="rounded-t-lg w-[288px] h-[216px] flex  items-center  mx-auto justify-center "
                 style={{
-                  backgroundImage: `url(${value.image})`,
+                  backgroundImage: `url(${item.icon})`,
                   backgroundSize: "cover",
                 }}
               >
-                <div className=" flex justify-between  flex-col w-[93%] h-[68%] gap-5 pt-6">
-                  <svg
-                    width="32"
-                    height="32"
-                    className="  items-end   flex justify-end w-[190%] "
-                    viewBox="0 0 32 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M22.6667 5.33331C18.4 5.33331 16 8.88931 16 10.6666C16 8.88931 13.6 5.33331 9.33333 5.33331C5.06667 5.33331 4 8.88931 4 10.6666C4 20 16 26.6666 16 26.6666C16 26.6666 28 20 28 10.6666C28 8.88931 26.9333 5.33331 22.6667 5.33331Z"
-                      fill="black"
-                      fill-opacity="0.3"
-                      stroke="white"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                <div className=" flex justify-between  flex-col w-[93%] h-[68%] pt-20">
   
                   <div className=" flex flex-row items-center  justify-between">
                     {/* left arrow */}
@@ -86,52 +70,15 @@ const Treading = () => {
   
               {/* content */}
   
-              <div className=" flex flex-col items-start justify-start text-start  h-auto w-full gap-3 text-[--text-color]">
+              <div className=" flex flex-col items-start justify-start text-start  h-auto w-full gap-2 text-[--text-color]">
                 <h3 className=" font-medium text-[18px] text-[text-color]">
-                {value.name}
+                {item.brand}
                 </h3>
-                <div className=" flex flex-row w-[100%] items-center justify-between">
-                  <div className=" flex flex-row gap-3">
-                    <svg
-                      width="16"
-                      height="20"
-                      viewBox="0 0 16 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8 10C8.55 10 9.021 9.804 9.413 9.412C9.80433 9.02067 10 8.55 10 8C10 7.45 9.80433 6.979 9.413 6.587C9.021 6.19567 8.55 6 8 6C7.45 6 6.97933 6.19567 6.588 6.587C6.196 6.979 6 7.45 6 8C6 8.55 6.196 9.02067 6.588 9.412C6.97933 9.804 7.45 10 8 10ZM8 20C5.31667 17.7167 3.31267 15.5957 1.988 13.637C0.662667 11.679 0 9.86667 0 8.2C0 5.7 0.804333 3.70833 2.413 2.225C4.021 0.741667 5.88333 0 8 0C10.1167 0 11.979 0.741667 13.587 2.225C15.1957 3.70833 16 5.7 16 8.2C16 9.86667 15.3377 11.679 14.013 13.637C12.6877 15.5957 10.6833 17.7167 8 20Z"
-                        fill="#666666"
-                      />
-                    </svg>
-  
-                    <p> {value.location}</p>
-                  </div>
-  
-                  <div className=" flex flex-row gap-3">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8.9271 0.695722L6.48599 5.86696L1.02432 6.69889C0.0448775 6.84731 -0.347645 8.10887 0.362634 8.83144L4.31403 12.8544L3.37945 18.5373C3.21123 19.5645 4.24674 20.3339 5.11403 19.8535L10 17.1702L14.886 19.8535C15.7533 20.33 16.7888 19.5645 16.6206 18.5373L15.686 12.8544L19.6374 8.83144C20.3476 8.10887 19.9551 6.84731 18.9757 6.69889L13.514 5.86696L11.0729 0.695722C10.6355 -0.226039 9.36823 -0.237757 8.9271 0.695722Z"
-                        fill="#FFDE33"
-                      />
-                    </svg>
-  
-                    <p className=""> {value.point}</p>
-                  </div>
-                </div>
-                <em className=" font-normal text-base text-[--main-color]">
-                {value.message}
-                </em>
-  
-                <p>
-                  From <span className=" font-semibold"> {value.price}</span>/day
+
+                <p className=" font-normal text-base text-[--main-color]">
+                {item.message}
                 </p>
+  
               </div>
             </div>
           ))}
@@ -157,7 +104,7 @@ const Treading = () => {
           </button>
         </div>
       </section>
-      );
-    };
+    );
+};
 
-export default Treading;
+export default Brand;

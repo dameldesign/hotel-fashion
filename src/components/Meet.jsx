@@ -3,13 +3,13 @@ import nine from "../assets/nine.png";
 
 const Meet = () => {
   return (
-    <div className=" flex-col  py-8 lg:px-10 2xl:px-40 items-center mx-auto justify-between w-full h-auto md:flex-row">
-      <h1 className="px-4 text-[--text-color] font-medium text-[32px] leading-[48px] md:mb-6 text-start lg:px-0 ">
+    <div className=" flex-col  py-10 lg:px-10  items-center mx-auto justify-between w-full xl:w-[80%] h-auto md:flex-row">
+      <h1 className="px-4 text-center text-[--text-color] font-medium text-[32px] leading-[48px] md:mb-6 lg:text-start lg:px-0 ">
         Meet Our Verified Exclusive Brands
       </h1>
       <div className=" flex bg-[#FFEFF6]  flex-col lg:flex-row  items-center w-full lg:gap-20">
         <img src={nine} alt="" className="w-70% z-40 w-[100%] lg:w-auto lg:h-[440px]"  />
-        <div className="text-center w-50% gap-8 flex flex-col px-4 py-6 md:px-20 mx-auto md:items-start xl:items-center xl:pr-30 ">
+        <div className="xl:text-center w-50% gap-8 flex flex-col px-4 py-6 md:px-20 mx-auto md:items-start xl:items-center xl:pr-30 ">
           <p className="text-[--text-color] font-normal text-[20px]">
             Exceptional Brands
           </p>

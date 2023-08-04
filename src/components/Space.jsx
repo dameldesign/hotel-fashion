@@ -4,19 +4,22 @@ import { slider } from "../data";
 
 const Space = () => {
   return (
-    <section className=" flex flex-col 2xl:px-40 items-center gap-10 justify-between text-[--text-color] mx-auto py-10 p-6 ">
-      <h1 className=" text-[--text-color] font-medium text-[32px] leading-[48px] xl:mb-6 text-start lg:px-0 ">
+    <section className=" flex flex-col 2xl:px-40 items-center gap-6 justify-between text-[--text-color] mx-auto py-10 p-6 ">
+      <div className=" items-center text-center lg:items-start lg:justify-start lg:flex lg:w-[95%] flex-col gap-6" > 
+
+      <h1 className=" text-[--text-color] flex items-start font-medium text-[32px] leading-[48px] xl:mb-6  lg:px-0 ">
         Available Hotel Spaces
       </h1>
       <p className="text-[18px] font-normal">
         Unlock Your Creative Haven: get Your Dream Space Today
       </p>
+       </div>
 
       {/* Grid of each individual item */}
       <div className=" w-full h-auto max-w-fit  p-5 pb-10 mx-auto gap-x-5  gap-y-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  place-items-center">
         {slider.map((value, index) => (
           <div
-            className="rounded-2xl  flex-col border-solid mb-4 border-[#D8D8D8] py-4 px-3.5 w-[316px] h-auto flex justify-between items-start gap-5 shadow-sm"
+            className="rounded-2xl  flex-col border-solid mb-4 border-[#D8D8D8] py-4 px-3.5 w-[316px] h-auto flex justify-between items-start gap-5"
             key={index}
           >
             <div
@@ -135,7 +138,7 @@ const Space = () => {
         ))}
       </div>
 
-      <div className=" lg:items-end lg:justify-end lg:flex lg:w-full">
+      <div className=" px-5 lg:items-end lg:justify-end lg:flex lg:w-full">
         {" "}
         <button className="btn gap-3 flex items-center justify-center font-Poppins ">
           {" "}

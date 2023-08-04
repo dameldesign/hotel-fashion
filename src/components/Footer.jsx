@@ -6,7 +6,7 @@ const Footer = () => {
       {/* Footer Content */}
       <div className="bg-[#FFFDFE] pt-16 pb-16 px-4 sm:px-8 md:px-12 lg:px-20 xl:pr-60 items-center flex ">
         {/* Footer Columns */}
-        <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 px-10">
+        <div className="grid grid-cols-1  xl:place-items-center  sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 px-10">
           {/* Column 1 */}
           <div className="flex flex-col items-start gap-4">
             <h1 className="text-[--main-color] text-[18px] font-medium">Helpful Tips</h1>
@@ -32,7 +32,7 @@ const Footer = () => {
           </div>
 
           {/* Column 3 */}
-          <div className="flex flex-col items-start gap-4">
+          <div className="flex flex-col gap-4">
             <h1 className="text-[--main-color] text-[18px] font-medium">Discover</h1>
             <div className="flex flex-col text-start text-base font-normal text-[--text-color] gap-2">
               <p className="hover:ml-2 focus:ml-2">City Guide</p>
@@ -89,7 +89,7 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom */}
-      <div className="bg-[#010101] px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 text-white font-normal text-base flex items-center h-[40px] w-screen gap-3">
+      <div className="bg-[#010101] px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 text-white font-normal text-[.8rem] md:text-base flex items-center h-[40px] w-screen gap-3">
         <p>Hotels Fashion</p>
         <p>&copy;{new Date().getFullYear()}.</p>
         <p>All Rights Reserved.</p>

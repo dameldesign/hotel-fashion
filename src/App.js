@@ -5,6 +5,7 @@ import Banner from "./components/Banner";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 const Treading = lazy(() => import("./Treading/Treading"));
+const Brand = lazy(() => import("./Treading/Brand"));
 const Testimonials = lazy(() => import("./components/Testimonials"));
 const Meet = lazy(() => import("./components/Meet"));
 const Space = lazy(() => import("./components/Space"));
@@ -13,10 +14,11 @@ const Space = lazy(() => import("./components/Space"));
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="w-full max-w-[100vw] overflow-x-hidden">
       <Banner />
       <Header />
       <Treading />
+      <Brand />
       <Meet />
       <Space />
       <Testimonials />
