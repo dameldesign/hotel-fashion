@@ -6,7 +6,7 @@ const Treading = () => {
         <section className=" flex flex-col 2xl:px-40 items-center gap-6 justify-between text-[--text-color] mx-auto py-10 p-6 ">
         <div className=" items-center justify-center w-full flex text-center lg:items-start lg:justify-start lg:flex lg:w-[95%] flex-col gap-6" > 
   
-        <h1 className=" text-[--text-color] text-start flex md:items-start font-medium text-[32px] leading-[48px] xl:mb-6  lg:px-0 ">
+        <h1 className=" text-[--text-color] text-start flex md:items-start font-medium text-[32px] leading-[48px]  lg:px-0 ">
         Trending Hotels
         </h1>
         <p className="text-[18px] font-normal">
