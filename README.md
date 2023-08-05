@@ -4,7 +4,6 @@ Simple Hotel Application react js app with [tailwind].
 
 ### [Live demo](https://hotel-fashion.netlify.app/)
 
-![Damel screenshot](https://tinyurl.com/27c4zh97)
 
 # Getting Started with Create React App
 
