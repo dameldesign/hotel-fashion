@@ -1,5 +1,5 @@
 import React from 'react';
-import { slider } from "../data";
+import { type } from "./data-two";
 
 const Treading = () => {
     return (
@@ -16,7 +16,7 @@ const Treading = () => {
   
         {/* Grid of each individual item */}
         <div className=" w-full h-auto max-w-fit  p-5 pb-10 mx-auto gap-x-5  gap-y-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  place-items-center">
-          {slider.map((value, index) => (
+          {type.map((value, index) => (
             <div
               className="rounded-2xl  flex-col border-solid mb-4 border-[#D8D8D8] py-4 px-3.5 w-[316px] h-auto flex justify-between items-start gap-5"
               key={index}
@@ -50,7 +50,7 @@ const Treading = () => {
   
                   <div className=" flex flex-row items-center  justify-between">
                     {/* left arrow */}
-                    <div className="flex items-center justify-center rounded-full bg-white w-[32px] h-[32px] ">
+                    <div className="flex items-center justify-center rounded-full bg-white/50 w-[32px] h-[32px] ">
                       <svg
                         width="11"
                         height="16"
@@ -66,7 +66,7 @@ const Treading = () => {
                     </div>
   
                     {/* right arrow */}
-                    <div className="flex items-center justify-center rounded-full bg-white w-[32px] h-[32px] ">
+                    <div className="flex items-center justify-center rounded-full bg-white/50 w-[32px] h-[32px] ">
                       <svg
                         width="12"
                         height="24"

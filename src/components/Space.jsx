@@ -51,7 +51,7 @@ const Space = () => {
 
                 <div className=" flex flex-row items-center  justify-between">
                   {/* left arrow */}
-                  <div className="flex items-center justify-center rounded-full bg-white w-[32px] h-[32px] ">
+                  <div className="flex items-center justify-center rounded-full bg-white/50 w-[32px] h-[32px] ">
                     <svg
                       width="11"
                       height="16"
@@ -67,7 +67,7 @@ const Space = () => {
                   </div>
 
                   {/* right arrow */}
-                  <div className="flex items-center justify-center rounded-full bg-white w-[32px] h-[32px] ">
+                  <div className="flex items-center justify-center rounded-full bg-white/50 w-[32px] h-[32px] ">
                     <svg
                       width="12"
                       height="24"

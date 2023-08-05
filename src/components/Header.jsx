@@ -13,14 +13,14 @@ const Header = () => {
         <h1 className="  leading-[50px] xl:leading-[84px] font-semibold text-[46px] lg:text-[56px]">
           FIND A HOME FOR YOUR DESIGNS
         </h1>
-        <p>pop ups in top class hotels around the world</p>
+        <p className="font-medium text-[18px] animate-pulse">Pop Ups In Top Class Hotels Around The World</p>
 
         {/* search bar */}
-        <div className=" items-center justify-center flex-col lg:flex-row ">
+        <div className=" items-center flex justify-center flex-col lg:flex-row ">
           <div>
-            <div class="flex flex-col mt-8 space-y-3 sm:-mx-0 sm:flex-row sm:justify-center h-auto w-full sm:space-y-0">
-              <div className=" flex flex-col sm:flex-row gap-2 md:gap-0">
-                <div className="px-6 py-3 text-gray-700 bg-white border flex items-center gap-3 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring sm:mx-2">
+            <div class="flex flex-col mt-8 space-y-3 items-center sm:-mx-0 sm:flex-row sm:justify-center h-auto w-auto sm:space-y-0">
+              <div className=" flex flex-col sm:flex-row   md:gap-0">
+                <div className="lg:pr-[369px] py-5 pl-5  pr-8 border-r-3.5 outline-none border-solid border-gray-300 text-gray-700 bg-white mb-2 md:mb-0  flex items-center gap-3  dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring">
                   <svg
                     width="24"
                     height="24"
@@ -37,20 +37,32 @@ const Header = () => {
                     />
                   </svg>
 
-                  <input id="email" type="text" placeholder="Find a space" className="" />
+                  <input id="email" type="text" placeholder="Find a space" className=" bg-white outline-none active:bg-white" />
                 </div>
 
-                <input
-                  id="text"
-                  type="text"
-                  class="px-6 py-3 text-gray-700 bg-white border rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring sm:mx-2"
-                  placeholder="Duration"
-                />
+                <div className=" py-5 px-5   text-gray-700 bg-white  flex items-center gap-3  dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring">
+
+                <select className="border flex rounded-lg p-2 gap-3 w-full outline-none text-gray-700">
+            <option value="" disabled selected className="w-[114px] text-gray-700 bg-slate-400">
+               Duration
+            </option>
+            <option value="option1"> 1 Week</option>
+            <option value="option2"> 2 Week</option>
+            <option value="option3">3 Week</option>
+          </select>
+                </div>
+
+
               </div>
 
-              <button class="px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:bg-blue-600 focus:outline-none sm:mx-2">
-                Notify Me
+              <button class="px-5 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[--main-color] rounded-md hover:bg-red-800 focus:bg-blue-600 focus:outline-none sm:mx-2">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M28.77 30.8919C26.0739 33.0461 22.6553 34.0862 19.2163 33.7986C15.7774 33.511 12.579 31.9174 10.2783 29.3453C7.97748 26.7732 6.74892 23.4177 6.84489 19.9681C6.94086 16.5184 8.35409 13.2364 10.7943 10.7962C13.2345 8.35598 16.5165 6.94275 19.9662 6.84678C23.4158 6.75081 26.7713 7.97937 29.3434 10.2801C31.9156 12.5809 33.5091 15.7793 33.7967 19.2182C34.0843 22.6572 33.0442 26.0758 30.89 28.7719L41.202 39.0819C41.3494 39.2192 41.4676 39.3848 41.5496 39.5688C41.6315 39.7528 41.6756 39.9514 41.6792 40.1528C41.6827 40.3542 41.6457 40.5543 41.5702 40.7411C41.4948 40.9279 41.3825 41.0975 41.2401 41.24C41.0976 41.3824 40.928 41.4947 40.7412 41.5701C40.5544 41.6456 40.3544 41.6826 40.153 41.6791C39.9515 41.6755 39.7529 41.6314 39.5689 41.5494C39.3849 41.4675 39.2193 41.3493 39.082 41.2019L28.77 30.8919ZM12.92 27.7679C11.4521 26.2998 10.4523 24.4295 10.047 22.3934C9.64174 20.3573 9.84914 18.2468 10.643 16.3285C11.4369 14.4102 12.7816 12.7703 14.5072 11.6161C16.2328 10.4618 18.2619 9.84505 20.3379 9.84366C22.414 9.84226 24.4439 10.4563 26.171 11.6082C27.8982 12.7602 29.2451 14.3982 30.0416 16.3154C30.838 18.2326 31.0483 20.3429 30.6457 22.3796C30.2432 24.4162 29.2459 26.2878 27.78 27.7579L27.77 27.7679L27.76 27.7759C25.7902 29.7411 23.1208 30.8441 20.3383 30.8426C17.5558 30.8412 14.8877 29.7353 12.92 27.7679Z" fill="white"/>
+</svg>
+
               </button>
+
+              
             </div>
           </div>
         </div>

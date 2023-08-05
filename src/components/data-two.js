@@ -1,26 +1,22 @@
 // import slider images
-import Avatar1 from '../src/assets/eight.png';
-import Icon1 from '../src/assets/fifteen.png';
-import Avatar2 from '../src/assets/seven.png';
-import Avatar3 from '../src/assets/six.png';
-import Avatar4 from '../src/assets/five.png';
-import Avatar5 from '../src/assets/one.png';
-import Avatar6 from '../src/assets/two.png';
-import Avatar7 from '../src/assets/three.png';
-import Avatar8 from '../src/assets/four.png';
+import Avatar1 from '../assets/eight.png';
+import Avatar2 from '../assets/seven.png';
+import Avatar3 from '../assets/twenty-one.png';
+import Avatar4 from '../assets/twenty.png';
+import Avatar5 from '../assets/one.png';
+import Avatar6 from '../assets/two.png';
+import Avatar7 from '../assets/three.png';
+import Avatar8 from '../assets/four.png';
 
-export const slider = [
+export const type = [
   {
     message:
     'Space Available',
     image: Avatar1,
-    name: 'Collxx',
+    name: 'The Vineyard',
     price: '£90.00',
     location: 'Brighton',
     point: 5.10,
-    brand:'Collxx',
-    text: 'Name',
-    icon: Icon1,
   },
   {
     message:
@@ -30,9 +26,6 @@ export const slider = [
     price: '£40.00',
     location: 'Brighton',
     point: 4.5,
-    // brand: ,
-    // text: ,
-    // icon: Icon1,
   },
   {
     message:
@@ -40,14 +33,14 @@ export const slider = [
     image: Avatar3,
     name: 'Mandarin Oriental',
     price: '£70.00',
-    location: 'Sunderland',
+    location: 'Hambleton Hall',
     point: 4.1,
   },
   {
     message:
     'Space Available',
     image: Avatar4,
-    name: 'Ballathie House Hotel',
+    name: 'The Lowry Hotel',
     price: '£60.00',
     location: 'Scotland',
     point: 4.6,
@@ -56,7 +49,7 @@ export const slider = [
     message:
     'Space Available',
     image: Avatar5,
-    name: 'The Westin Valencia',
+    name: 'Ten Hill Palace Hotel',
     price: '£59.00',
     location: 'Valencia',
     point: 4.4,
@@ -65,7 +58,7 @@ export const slider = [
     message:
     'Space Available',
     image: Avatar6,
-    name: 'Four Seasons Hotel',
+    name: 'Blythswood Square Hotel',
     price: '£100.00',
     location: 'Madrid',
     point: 4.6,
@@ -75,7 +68,7 @@ export const slider = [
     message:
     'Space Available',
     image: Avatar7,
-    name: 'Hotel Felix',
+    name: 'St James Hotel',
     price: '£89.00',
     location: 'Berkshire',
     point: 4.5,
@@ -85,7 +78,7 @@ export const slider = [
     message:
     'Space Available',
     image: Avatar8,
-    name: 'Reina Isabel',
+    name: 'Hotel Felix',
     price: '£25.00',
     location: 'Las Palmas',
     point: 4.5,
