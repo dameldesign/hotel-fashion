@@ -1,13 +1,10 @@
 # Damel |Hotel-Fashion react app
-Simple Hotel Application react js app with firebase [tailwind].
+Simple Hotel Application react js app with [tailwind].
 
 
-### [Live demo](https://salinaka-ecommerce.web.app/)
+### [Live demo](https://hotel-fashion.netlify.app/)
 
-![Salinaka screenshot](https://raw.githubusercontent.com/jgudo/ecommerce-react/master/static/screeny1.png)
-![Salinaka screenshot](https://raw.githubusercontent.com/jgudo/ecommerce-react/master/static/screeny2.png)
-![Salinaka screenshot](https://raw.githubusercontent.com/jgudo/ecommerce-react/master/static/screeny3.png)
-![Salinaka screenshot](https://raw.githubusercontent.com/jgudo/ecommerce-react/master/static/screeny7.png)
+![Damel screenshot](https://tinyurl.com/27c4zh97)
 
 # Getting Started with Create React App
 
